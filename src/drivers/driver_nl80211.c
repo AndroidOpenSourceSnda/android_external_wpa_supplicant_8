@@ -9221,6 +9221,10 @@ static int android_pno_stop(struct i802_bss *bss)
 	return android_priv_cmd(bss, "PNOFORCE 0");
 }
 
+int wpa_driver_nl80211_driver_cmd(void *priv, char *cmd, char *buf, size_t buf_len){
+
+    return -1;
+}
 #endif /* ANDROID */
 
 static int nl80211_set_wowlan(void *priv,
